@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aashan and Nisha | May 22</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="profiles-screen" id="profilesScreen" aria-labelledby="profilesTitle">
+        <p class="anniversary-kicker">Aashan & Nisha</p>
+        <h1 id="profilesTitle">Who's watching?</h1>
+        <p class="date-line">May 22</p>
+
+        <div class="profiles-grid" aria-label="Anniversary profiles">
+          <button class="profile-card" type="button" data-person="Aashan">
+            <span class="avatar avatar-aashan" aria-hidden="true">
+              <span class="eye eye-left"></span>
+              <span class="eye eye-right"></span>
+              <span class="smile"></span>
+            </span>
+            <span class="profile-name">Aashan</span>
+          </button>
+
+          <button class="profile-card" type="button" data-person="Nisha">
+            <span class="avatar avatar-nisha" aria-hidden="true">
+              <span class="eye eye-left"></span>
+              <span class="eye eye-right"></span>
+              <span class="smile"></span>
+            </span>
+            <span class="profile-name">Nisha</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="unlock-screen is-hidden" id="unlockScreen" aria-labelledby="unlockTitle">
+        <button class="unlock-back" type="button" id="unlockBackButton" aria-label="Back to profiles"></button>
+
+        <div class="unlock-card">
+          <p class="anniversary-kicker">Secret Nepali Date</p>
+          <div class="lock-orbit" aria-hidden="true">
+            <span class="lock-glow"></span>
+            <span class="lock-body">
+              <span class="lock-loop"></span>
+              <span class="lock-dot"></span>
+            </span>
+          </div>
+          <h2 id="unlockTitle">Unlock memories</h2>
+          <p class="unlock-hint" id="unlockHint">Enter the birthday password to continue.</p>
+
+          <form class="unlock-form" id="unlockForm">
+            <div class="month-options" aria-label="Choose Nepali month">
+              <button class="month-option" type="button" data-month="baishak">Baishak</button>
+              <button class="month-option" type="button" data-month="srawan">Srawan</button>
+            </div>
+
+            <label class="day-field">
+              <span>Day</span>
+              <input id="dayInput" type="text" inputmode="numeric" maxlength="2" autocomplete="off" placeholder="??" />
+            </label>
+
+            <button class="unlock-submit" type="submit">
+              <span class="unlock-play" aria-hidden="true"></span>
+              Unlock Our Story
+            </button>
+
+            <p class="unlock-message" id="unlockMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="home-screen is-hidden" id="homeScreen" aria-label="Aashan and Nisha memories">
+        <header class="top-nav">
+          <button class="brand-button" type="button" aria-label="Back to profiles">NETFLIX</button>
+          <nav class="nav-links" aria-label="Memory sections">
+            <a href="#homeHero">Home</a>
+            <a href="#topPicks">Our Story</a>
+            <a href="#yearOne">Year 1</a>
+            <a href="#yearTwo">Year 2</a>
+            <a href="#yearThree">Year 3</a>
+          </nav>
+          <div class="nav-actions">
+            <button class="icon-button search-button" type="button" aria-label="Search memories">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="10.5" cy="10.5" r="6.8"></circle>
+                <path d="m16 16 5 5"></path>
+              </svg>
+            </button>
+            <button class="icon-button bell-button" type="button" aria-label="Anniversary reminders">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                <path d="M10 21h4"></path>
+              </svg>
+              <span class="notification-count">3</span>
+            </button>
+            <button class="mini-profile" type="button" aria-label="Selected profile">
+              <span id="selectedInitial">A</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <section class="hero-section" id="homeHero">
+          <video class="hero-video" id="heroVideo" muted loop playsinline poster="https://pub-1a125c46828845388af1f5af20fb0af0.r2.dev/assets/posters/hero.jpg">
+            <source src="https://pub-1a125c46828845388af1f5af20fb0af0.r2.dev/assets/videos/hero-journey.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-fallback" aria-hidden="true"></div>
+          <div class="hero-shade" aria-hidden="true"></div>
+
+          <div class="hero-copy">
+            <h2 id="heroTitle">3 Years of Us</h2>
+            <p class="hero-subtitle" id="heroSubtitle">Aashan and Nisha, since May 22</p>
+            <p class="hero-description" id="heroDescription">
+              From the first hello to every laugh, trip, late-night talk, and tiny moment that became home.
+            </p>
+            <div class="hero-buttons">
+              <button class="primary-action" type="button" id="playHeroButton">
+                <span class="play-icon" aria-hidden="true"></span>
+                Play
+              </button>
+              <button class="secondary-action" type="button" id="moreInfoButton">
+                <span class="info-icon" aria-hidden="true">i</span>
+                More Info
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-rating">
+            <button class="mute-button" type="button" id="muteButton" aria-label="Toggle sound">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M11 5 6 9H3v6h3l5 4z"></path>
+                <path d="m16 9 5 5"></path>
+                <path d="m21 9-5 5"></path>
+              </svg>
+            </button>
+            <span class="rating-badge">3+</span>
+          </div>
+        </section>
+
+        <section class="rows-area" aria-label="Memory video rows">
+          <div class="memory-row" id="topPicks">
+            <div class="row-heading">
+              <h3>Today's Top Picks for You</h3>
+              <span>Because it is always May 22 here</span>
+            </div>
+            <div class="video-row" data-row="top"></div>
+          </div>
+
+          <div class="memory-row" id="yearOne">
+            <div class="row-heading">
+              <h3>Year 1: The Beginning</h3>
+              <span>First memories, first favorites</span>
+            </div>
+            <div class="video-row" data-row="year1"></div>
+          </div>
+
+          <div class="memory-row" id="yearTwo">
+            <div class="row-heading">
+              <h3>Year 2: Growing Together</h3>
+              <span>More comfort, more stories</span>
+            </div>
+            <div class="video-row" data-row="year2"></div>
+          </div>
+
+          <div class="memory-row" id="yearThree">
+            <div class="row-heading">
+              <h3>Year 3: The Hardest Season</h3>
+              <span>Long distance, silence, fights, and still love</span>
+            </div>
+            <div class="video-row" data-row="year3"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <aside class="info-panel is-hidden" id="infoPanel" aria-live="polite">
+      <div class="info-dialog">
+        <button class="close-button" type="button" id="closeInfoButton" aria-label="Close more info"></button>
+        <p class="series-label">About this story</p>
+        <h2>Aashan & Nisha</h2>
+        <p>
+          A three-year journey collected like a favorite series: the first smiles, the comfort, the long distance,
+          the fights, the misunderstandings, and the love that is still asking for one honest conversation.
+        </p>
+        <div class="details-grid">
+          <span>Anniversary</span>
+          <strong>May 22</strong>
+          <span>Seasons</span>
+          <strong>3 Years</strong>
+          <span>Status</span>
+          <strong>Still choosing love</strong>
+        </div>
+      </div>
+    </aside>
+
+    <section class="player-screen is-hidden" id="playerModal" aria-label="Memory video player" aria-live="polite">
+      <div class="player-shell">
+        <button class="close-button player-back-button" type="button" id="closePlayerButton" aria-label="Back to memories"></button>
+        <video class="memory-player" id="memoryPlayer" controls playsinline></video>
+        <div class="player-details">
+          <p class="series-label" id="playerSeason">Memory</p>
+          <h2 id="playerTitle">Aashan & Nisha</h2>
+          <p id="playerDescription">Choose a memory to play.</p>
+          <p class="missing-video is-hidden" id="missingVideo"></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

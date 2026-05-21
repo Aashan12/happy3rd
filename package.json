@@ -1,0 +1,17 @@
+{
+  "name": "happy3rd",
+  "version": "1.0.0",
+  "description": "Aashan & Nisha 3rd Anniversary Website",
+  "scripts": {
+    "upload": "node upload-to-r2.js",
+    "update-urls": "node update-asset-urls.js",
+    "deploy": "npm run upload && npm run update-urls && vercel --prod"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.515.0",
+    "dotenv": "^16.4.1"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  }
+}

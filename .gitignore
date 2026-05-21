@@ -1,0 +1,19 @@
+# Environment variables
+.env
+.env.local
+
+# Dependencies
+node_modules/
+
+# Vercel
+.vercel
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local videos (will be on R2)
+assets/videos/*.mp4
+assets/posters/*.jpeg
+assets/posters/*.jpg
+assets/posters/*.png
