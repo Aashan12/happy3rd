@@ -12,8 +12,10 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# Local videos (will be on R2)
+# Local videos and images (will be on R2)
 assets/videos/*.mp4
+assets/videos/*.mov
+assets/posters/*.mp4
 assets/posters/*.jpeg
 assets/posters/*.jpg
 assets/posters/*.png
